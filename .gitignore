@@ -1,0 +1,39 @@
+# Bytecode and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+*.env
+
+# Logs and debug files
+*.log
+instance/
+*.sqlite3
+db.sqlite3
+
+# Python package files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE and editor files
+.vscode/
+*.swp
+*.swo
+.idea/
+*.iml
+
+# MacOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Docker and deployment
+*.dockerignore
+.envrc
