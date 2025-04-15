@@ -15,7 +15,7 @@ API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 
 # classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-llm_models = ["gpt-4o-mini", "gpt-4o", "o3-mini", "o1-mini", "claude-3-7-sonnet", "claude-3-5-sonnet", "deepseek-chat", "deepseek-reasoner", "gemini-2.0-flash", "gemini-1.5-flash", "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo", "mistral-large-latest", "pixtral-large-latest", "codestral-latest", "google/gemma-2-27b-it", "grok-beta"]
+llm_models = ["gpt-4o-mini", "gpt-4o", "o3-mini", "o1-mini", "claude-3-7-sonnet", "claude-3-5-sonnet", "deepseek-chat", "deepseek-reasoner", "gemini-2.0-flash", "gemini-1.5-flash", "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo", "mistral-large-latest", "codestral-latest", "google/gemma-2-27b-it", "grok-beta"]
 question_topics = ["Society & Culture", "Science & Mathematics", "Health", "Education & Reference", "Computers & Internet", "Sports", "Business & Finance", "Entertainment & Music", "Family & Relationships", "Politics & Government"]
 
 class LLMSelector:
