@@ -15,7 +15,49 @@ API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
 
 # classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-llm_models = ["gpt-4o-mini", "gpt-4o", "o3-mini", "o1-mini", "claude-3-7-sonnet", "claude-3-5-sonnet", "deepseek-chat", "deepseek-reasoner", "gemini-2.0-flash", "gemini-1.5-flash", "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo", "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo", "mistral-large-latest", "codestral-latest", "google/gemma-2-27b-it", "grok-beta"]
+llm_models = [
+    # OpenAI/OpenRouter models
+    "gpt-4o-mini",
+    "gpt-4o",
+    "o1",
+    "o1-mini", 
+    "o1-pro",
+    "o3",
+    "o3-mini",
+    "o4-mini",
+    "gpt-4.1",
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-4.5-preview",
+    
+    # Anthropic models
+    "claude-3-7-sonnet",
+    "claude-3-5-sonnet",
+    
+    # DeepSeek models
+    "deepseek-chat",
+    "deepseek-reasoner",
+    
+    # Google models
+    "gemini-2.0-flash",
+    "gemini-1.5-flash",
+    
+    # Meta/Llama models
+    "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+    "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+    
+    # Mistral models
+    "mistral-large-latest",
+    "pixtral-large-latest",
+    "codestral-latest",
+    
+    # Google/Gemma models
+    "google/gemma-2-27b-it",
+    
+    # xAI models
+    "grok-beta"
+]
 question_topics = ["Society & Culture", "Science & Mathematics", "Health", "Education & Reference", "Computers & Internet", "Sports", "Business & Finance", "Entertainment & Music", "Family & Relationships", "Politics & Government"]
 
 class LLMSelector:
